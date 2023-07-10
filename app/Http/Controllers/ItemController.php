@@ -88,7 +88,7 @@ class ItemController extends Controller
             'name' => ucfirst($request->name),
             'category_id' => $request->category_id
         ]);
-        return redirect()->route('barang.index')->with('Sukses', 'Barang Berhasil di Update!!');
+        return redirect()->route('item.index')->with('Sukses', 'Barang Berhasil di Update!!');
     }
 
     public function in(Item $item)
