@@ -7,21 +7,21 @@ use App\Models\Category;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 
-class BarangController extends Controller
+class ItemController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $barangs = Item::with('category')->where('user_id', auth()->user()->id)
+        $items = Item::with('category')->where('user_id', auth()->user()->id)
         ->orderBy('is_in', 'asc')
         ->orderBy('created_at', 'desc')
         ->get();
-        $barangsComplete = Item::where('user_id', auth()->id)
+        $itemsOut = Item::where('user_id', auth()->user()->id)
         ->where('is_in', true)
         ->count();
-        return view('item.index', compact('items', 'itemsCompleted'));
+        return view('item.index', compact('items', 'itemsOut'));
     }
 
     /**
@@ -29,7 +29,7 @@ class BarangController extends Controller
      */
     public function create()
     {
-        $categories = Category::where('user_id', auth()->id)->get();
+        $categories = Category::where('user_id', auth()->user()->id)->get();
         return view('item.create', compact('categories'));
     }
 
@@ -97,9 +97,9 @@ class BarangController extends Controller
             $item->update([
                 'is_in' => true,
             ]);
-            return redirect()->route('item.index')->with('success', 'Item completed successfully!');
+            return redirect()->route('item.index')->with('success', 'Item In successfully!');
         } else {
-            return redirect()->route('item.index')->with('danger','You are not authorized to complete this Item!');
+            return redirect()->route('item.index')->with('danger','You are not authorized to In this Item!');
         }
     }
     public function out(Item $item)
@@ -109,9 +109,9 @@ class BarangController extends Controller
             $item->update([
                 'is_out' => false,
             ]);
-            return redirect()->route('item.index')->with('success', 'Item uncompleted successfully!');
+            return redirect()->route('item.index')->with('success', 'Item Out successfully!');
         } else {
-            return redirect()->route('item.index')->with('danger','You are not authorized to uncomplete this Item!');
+            return redirect()->route('item.index')->with('danger','You are not authorized to Out this Item!');
         }
     }
 
@@ -128,12 +128,12 @@ class BarangController extends Controller
         }
     }
 
-    public function destroyCompleted()
+    public function destroyOut()
     {
-        $itemsCompleted = Item::where('user_id', auth()->user()->id)
+        $itemsOut = Item::where('user_id', auth()->user()->id)
             ->where('is_in', true)
             ->get();
-        foreach ($itemsCompleted as $item) {
+        foreach ($itemsOut as $item) {
             $item->delete();
         }
         // ($itemsCompleted);

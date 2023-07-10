@@ -30,7 +30,18 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::resource('/item', ItemController::class);
-Route::resource('/category', CategoryController::class);
+
+
+
+Route::middleware('auth', 'verified')->group(function () {
+
+    Route::resource('/item', ItemController::class);
+    Route::resource('/category', CategoryController::class);
+
+    Route::patch('/item/{item}/in', [ItemController::class, 'in'])->name('item.in');
+    Route::patch('/item/{item}/out', [ItemController::class, 'out'])->name('item.out');
+    Route::delete('/item/{item}', [ItemController::class, 'destroy'])->name('item.destroy');
+    Route::delete('/item', [ItemController::class, 'destroyOut'])->name('item.deleteallout');
+});
 
 require __DIR__.'/auth.php';
