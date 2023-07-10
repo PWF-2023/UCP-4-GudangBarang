@@ -21,9 +21,9 @@
                     <x-nav-link :href="route('category.index')" :active="request()->routeIs('category')">
                         {{ __('Category') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('user.index')" :active="request()->routeIs('user')">
+                    {{-- <x-nav-link :href="route('user.index')" :active="request()->routeIs('user')">
                         {{ __('User') }}
-                    </x-nav-link>
+                    </x-nav-link> --}}
                 </div>
             </div>
 
@@ -85,9 +85,9 @@
             <x-responsive-nav-link :href="route('category.index')" :active="request()->routeIs('category')">
                 {{ __('Category') }}
             </x-responsive-nav-link>
-            <x-responsive-nav-link :href="route('user.index')" :active="request()->routeIs('user')">
+            {{-- <x-responsive-nav-link :href="route('user.index')" :active="request()->routeIs('user')">
                 {{ __('User') }}
-            </x-responsive-nav-link>
+            </x-responsive-nav-link> --}}
         </div>
 
         <!-- Responsive Settings Options -->
