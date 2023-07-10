@@ -49,7 +49,7 @@ class BarangController extends Controller
         ]);
 
         $item = Item::create([
-            'name' => ucfirst($request->title),
+            'name' => ucfirst($request->name),
             'user_id' => auth()->user()->id,
             'category_id' => $request->category_id
         ]);
@@ -85,7 +85,7 @@ class BarangController extends Controller
         ]);
 
         $item->update([
-            'name' => ucfirst($request->title),
+            'name' => ucfirst($request->name),
             'category_id' => $request->category_id
         ]);
         return redirect()->route('barang.index')->with('Sukses', 'Barang Berhasil di Update!!');

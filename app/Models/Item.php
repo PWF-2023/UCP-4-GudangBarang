@@ -9,14 +9,23 @@ class Item extends Model
 {
     use HasFactory;
 
-    // protected $casts = [
-    //     'is_in' => 'boolean',
-    // ];
+    protected $casts = [
+        'is_in' => 'boolean',
+    ];
 
-    // protected $fillable = [
-    //     'title',
-    //     'user_id',
-    //     'category_id',
-    //     'is_complete',
-    // ];
+    protected $fillable = [
+        'name',
+        'user_id',
+        'category_id',
+        'is_in',
+    ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
+    }
 }
