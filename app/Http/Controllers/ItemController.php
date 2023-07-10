@@ -97,9 +97,9 @@ class BarangController extends Controller
             $item->update([
                 'is_in' => true,
             ]);
-            return redirect()->route('item.index')->with('success', 'Todo completed successfully!');
+            return redirect()->route('item.index')->with('success', 'Item completed successfully!');
         } else {
-            return redirect()->route('item.index')->with('danger','You are not authorized to complete this todo!');
+            return redirect()->route('item.index')->with('danger','You are not authorized to complete this Item!');
         }
     }
     public function out(Item $item)
@@ -109,9 +109,9 @@ class BarangController extends Controller
             $item->update([
                 'is_out' => false,
             ]);
-            return redirect()->route('item.index')->with('success', 'Todo uncompleted successfully!');
+            return redirect()->route('item.index')->with('success', 'Item uncompleted successfully!');
         } else {
-            return redirect()->route('item.index')->with('danger','You are not authorized to uncomplete this todo!');
+            return redirect()->route('item.index')->with('danger','You are not authorized to uncomplete this Item!');
         }
     }
 
@@ -124,7 +124,7 @@ class BarangController extends Controller
             $item->delete();
             return redirect()->route('item.index')->with('Sukses', 'Barang Berhasil di Hapus!!');
         } else {
-            return redirect()->route('item.index')->with('danger','You are not authorized to delete this todo!');
+            return redirect()->route('item.index')->with('danger','You are not authorized to delete this Item!');
         }
     }
 
@@ -136,7 +136,7 @@ class BarangController extends Controller
         foreach ($itemsCompleted as $item) {
             $item->delete();
         }
-        // ($todosCompleted);
+        // ($itemsCompleted);
         return redirect()->route('item.index')->with('Sukses', 'Semua barang yang sudah selesai berhasil dihapus!');
     }
 }
