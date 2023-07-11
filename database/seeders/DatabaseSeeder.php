@@ -2,6 +2,8 @@
 
 namespace Database\Seeders;
 
+use App\Models\Category;
+use App\Models\Item;
 use App\Models\User;
 use Illuminate\Support\Str;
 
@@ -25,5 +27,8 @@ class DatabaseSeeder extends Seeder
                 'is_admin' => true
             ]
         );
+        User::factory(50)->create();
+        Category::factory(50)->create();
+        Item::factory(50)->create();
     }
 }
