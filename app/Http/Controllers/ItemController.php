@@ -107,7 +107,7 @@ class ItemController extends Controller
         if (auth()->user()->id == $item->user_id) {
 
             $item->update([
-                'is_out' => false,
+                'is_in' => false,
             ]);
             return redirect()->route('item.index')->with('success', 'Item Out successfully!');
         } else {
