@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\GithubController;
 use App\Http\Controllers\ItemController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
@@ -46,5 +47,8 @@ Route::middleware('auth', 'verified')->group(function () {
         Route::patch('/user/{user}/removeadmin', [UserController::class, 'removeadmin'])->name('user.removeadmin');
     });
 });
+
+Route::get('/auth/github', [GithubController::class, 'redirectToProvider'])-> name('github.redirect');
+Route::get('/auth/github/callback', [GithubController::class, 'handleProviderCallback'])-> name('github.callback');
 
 require __DIR__.'/auth.php';
