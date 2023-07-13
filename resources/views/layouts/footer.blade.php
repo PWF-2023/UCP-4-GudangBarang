@@ -20,6 +20,9 @@
                             <a href="/" class="group inline-flex items-center hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">
                                 About
                             </a>
+                            <a href="/" class="group inline-flex items-center hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">
+                                FAQ
+                            </a>
                         </div>
                     </div>
                 </div>
