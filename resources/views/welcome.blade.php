@@ -28,11 +28,43 @@
                 <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right z-10">
                     
                     @auth
-
-                        <a href="{{ url('/dashboard') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Dashboard</a>
-                    @else
                     <div class="flex">
                         <div class=" ml-2 mr-4 ">
+                            <button type="button" x-bind:class="darkMode ? 'bg-indigo-500' : 'bg-gray-200'"
+                                x-on:click="darkMode = !darkMode"
+                                class="relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                                role="switch" aria-checked="false">
+                                <span class="sr-only">Dark mode toggle</span>
+                                <span x-bind:class="darkMode ? 'translate-x-5 bg-gray-700' : 'translate-x-0 bg-white'"
+                                    class="pointer-events-none relative inline-block h-5 w-5 transform rounded-full shadow ring-0 transition duration-200 ease-in-out">
+                                    <span
+                                        x-bind:class="darkMode ? 'opacity-0 ease-out duration-100' : 'opacity-100 ease-in duration-200'"
+                                        class="absolute inset-0 flex h-full w-full items-center justify-center transition-opacity"
+                                        aria-hidden="true">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-gray-400"
+                                            viewBox="0 0 20 20" fill="currentColor">
+                                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+                                        </svg>
+                                    </span>
+                                    <span
+                                        x-bind:class="darkMode ?  'opacity-100 ease-in duration-200' : 'opacity-0 ease-out duration-100'"
+                                        class="absolute inset-0 flex h-full w-full items-center justify-center transition-opacity"
+                                        aria-hidden="true">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white"
+                                            viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </span>
+                                </span>
+                            </button>
+                        </div>
+                        <a href="{{ url('/dashboard') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Dashboard</a>
+                    </div>
+                        @else
+                    <div class="flex">
+                        <div class="mr-4">
                             <button type="button" x-bind:class="darkMode ? 'bg-indigo-500' : 'bg-gray-200'"
                                 x-on:click="darkMode = !darkMode"
                                 class="relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
@@ -189,8 +221,8 @@
                 </div>
             </div>
 
-            <div id="about" class="flex">
-                <div div  class="grid grid-cols-1 md:grid-cols-1 gap-6 lg:gap-8">>
+            <div id="about" class="flex mt-20 justify-center">
+                <div div  class="grid grid-cols-1 md:grid-cols-1 gap-6 lg:gap-8">
                     <div class="max-w-3xl mb-20 space-y-5 sm:mx-auto sm:space-y-4">
                         <h2 class="text-center text-xl font-semibold text-gray-900 dark:text-white ">About</h2>
                         <p style="text-align:justify" class="mt-1 text-gray-500 dark:text-gray-400 leading-relaxed scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">The "Gudang Barang" landing page is an attractive and responsive first look of a warehouse management application built using the Laravel framework. This page is designed with an aesthetically pleasing layout and an intuitive user experience.
