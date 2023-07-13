@@ -84,13 +84,13 @@
                                             </button>
                                         </form>
                                         @else
-                                        <form action="{{ route('item.out', $item) }}" method="Post">
+                                        {{-- <form action="{{ route('item.out', $item) }}" method="Post">
                                             @csrf
                                             @method('PATCH')
                                             <button type="submit" class="text-red-600 dark:text-red-400">
                                                 Out
                                             </button>
-                                        </form>
+                                        </form> --}}
                                         @endif
                                         <form action="{{ route('item.destroy', $item) }}" method="Post">
                                             @csrf
