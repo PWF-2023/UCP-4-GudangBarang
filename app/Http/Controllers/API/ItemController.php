@@ -137,7 +137,43 @@ class ItemController extends Controller
      */
     public function update(Request $request, Item $item)
     {
-        //
+        try {
+            $request->validate([
+                'name' => 'required|max:255',
+                'category_id' => [
+                    'nullable',
+                    Rule::exists('categories', 'id')->where(function ($query) {
+                        $query->where('user_id', auth()->user()->id);
+                    })
+                ]
+            ]);
+            if (auth()->user()->id !== $item->user_id) {
+                return response()->json([
+                    'status' => 'error',
+                    'message' => 'Forbidden'
+                ], 403);
+            }
+            $item->update([
+                'title' => ucfirst($request->title),
+                'category_id' => $request->category_id
+            ]);
+            $item = Item::with('category')
+                ->where('id', $item->id)
+                ->first();
+            return response()->json([
+                'status' => 'success',
+                'message' => 'Todo updated',
+                'data' => [
+                    'todo' => $item,
+                ]
+            ], 200);
+        } catch (ValidationException $exception) {
+            return response()->json([
+                'status' => 'error',
+                'message' => 'Validation failed',
+                'errors' => $exception->errors(),
+            ], 422);
+        }
     }
 
     /**
@@ -207,7 +243,7 @@ class ItemController extends Controller
         ], 200);
     }
 
-    public function deleteAllCompleted()
+    public function deleteAllIn()
     {
         $items = Item::where('user_id', auth()->user()->id)
             ->where('is_in', true)
@@ -216,7 +252,7 @@ class ItemController extends Controller
             # code...
             return response()->json([
                 'status' => 'error',
-                'message' => 'No completed item found',
+                'message' => 'No in item found',
             ], 404);
         }
 
@@ -225,7 +261,7 @@ class ItemController extends Controller
         }
         return response()->json([
             'status' => 'success',
-            'message' => '' . $item->count() . ' completed item deleted',
+            'message' => '' . $item->count() . ' in item deleted',
         ], 200);
     }
 }
