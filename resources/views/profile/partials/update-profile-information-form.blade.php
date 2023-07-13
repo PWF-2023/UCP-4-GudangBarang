@@ -1,5 +1,12 @@
 <section>
     <header>
+        @if (Auth::user()->github_id)
+
+        <h2 class="text-lg font-medium text-gray-900 dark:text-gray-100">
+            {{ __('You Log In with Github') }}
+        </h2>
+        @endif
+
         <h2 class="text-lg font-medium text-gray-900 dark:text-gray-100">
             {{ __('Profile Information') }}
         </h2>
