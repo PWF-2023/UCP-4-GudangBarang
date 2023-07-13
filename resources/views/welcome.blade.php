@@ -149,14 +149,9 @@
                 <div div  class="grid grid-cols-1 md:grid-cols-1 gap-6 lg:gap-8">>
                     <div class="max-w-3xl mb-20 space-y-5 sm:mx-auto sm:space-y-4">
                         <h2 class="text-center text-xl font-semibold text-gray-900 dark:text-white ">About</h2>
-                        <p style="text-align:justify" class="mt-1 text-gray-500 dark:text-gray-400 leading-relaxed scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">The "Gudang Barang" landing page is an attractive and responsive first look of a warehouse management application built using the Laravel framework. This page is designed with an aesthetically pleasing layout and an intuitive user experience.
-
-                            The content on the landing page includes elements such as an attractive title, a brief description of the "Gudang Barang" application, and illustrations relevant to warehouse management. This aims to provide an overview to the user about the purpose and usefulness of the application.
-
-                            In addition, the "Gudang Barang" landing page also displays a list of key features provided by the application, such as item search, stock additions, inventory updates, and reporting. Each feature is accompanied by a clear icon to clarify its functionality.
-                            "Gudang Barang" aims to provide users with an interesting and informative description of the warehouse management application, invite them to explore the features offered, and provide a comfortable and easy-to-use user experience.
-
-                            Overall, Laravel's "Gudang Barang" landing page aims to provide users with an interesting and informative overview of the warehouse management application, invite them to explore the features it offers, and provide a comfortable and easy-to-use user experience.</p>
+                        <p style="text-align:justify" class="mt-1 text-gray-500 dark:text-gray-400 leading-relaxed scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
+                            "Gudang Barang" is a website that provides a comprehensive platform to fulfill storage and distribution needs. With an intuitive and user-friendly design, this website allows users to explore various types of available goods, ranging from consumer products to industrial equipment. Additionally, "Gudang Barang" also offers fast ordering and delivery services, making it convenient for users to obtain goods efficiently. With a guarantee of quality products and competitive prices, "Gudang Barang" becomes a reliable online destination for all storage and distribution needs.
+                        </p>
                     </div>
                 </div>
             </div>
