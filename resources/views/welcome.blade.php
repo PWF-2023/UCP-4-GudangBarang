@@ -51,12 +51,12 @@
                             <div class="flex items-center justify-center">
                                 <div class="h-16 w-16 bg-red-50 dark:bg-red-800/20 flex items-center justify-center rounded-full">
                                     <!-- Ganti URL foto profil di sini -->
-                                    <img src="https://assets.kompasiana.com/items/album/2021/03/24/blank-profile-picture-973460-1280-605aadc08ede4874e1153a12.png?t=o&v=740&x=416" alt="Foto Profil" class="w-10 h-10 rounded-full">
+                                    <img src="foto\andre2.jpg" alt="Foto Profil" class="w-10 h-10 rounded-full">
                                 </div>
                                 <div class="ml-4">
                                     <!-- Ganti nama dan divisi di sini -->
                                     <h2 class="mt-1 text-xl font-semibold text-gray-900 dark:text-white">Andre Pratama ONG</h2>
-                                    <p class="mt-1 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">Ketua Tim</p>
+                                    <p class="mt-1 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">Team Leader</p>
                                 </div>
                             </div>
 
@@ -74,12 +74,12 @@
                             <div class="flex items-center">
                                 <div class="h-16 w-16 bg-red-50 dark:bg-red-800/20 flex items-center justify-center rounded-full">
                                     <!-- Ganti URL foto profil di sini -->
-                                    <img src="https://assets.kompasiana.com/items/album/2021/03/24/blank-profile-picture-973460-1280-605aadc08ede4874e1153a12.png?t=o&v=740&x=416" alt="Foto Profil" class="w-10 h-10 rounded-full">
+                                    <img src="foto\adel2.jpg" alt="Foto Profil" class="w-10 h-10 rounded-full">
                                 </div>
                                 <div class="ml-4">
                                     <!-- Ganti nama dan divisi di sini -->
                                     <h2 class="mt-1 text-xl font-semibold text-gray-900 dark:text-white">Adela Zuniardi Rantoni</h2>
-                                    <p class="mt-1 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">Anggota Kelompok</p>
+                                    <p class="mt-1 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">Team Member</p>
                                 </div>
                             </div>
 
@@ -92,12 +92,12 @@
                             <div class="flex items-center">
                                 <div class="h-16 w-16 bg-red-50 dark:bg-red-800/20 flex items-center justify-center rounded-full">
                                     <!-- Ganti URL foto profil di sini -->
-                                    <img src="https://assets.kompasiana.com/items/album/2021/03/24/blank-profile-picture-973460-1280-605aadc08ede4874e1153a12.png?t=o&v=740&x=416" alt="Foto Profil" class="w-10 h-10 rounded-full">
+                                    <img src="foto\abid.jpg" alt="Foto Profil" class="w-10 h-10 rounded-full">
                                 </div>
                                 <div class="ml-4">
                                     <!-- Ganti nama dan divisi di sini -->
                                     <h2 class="mt-1 text-xl font-semibold text-gray-900 dark:text-white">Abid Ibadurrahman</h2>
-                                    <p class="mt-1 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">Anggota Kelompok</p>
+                                    <p class="mt-1 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">Team Member</p>
                                 </div>
                             </div>
 
@@ -110,12 +110,12 @@
                             <div class="flex items-center">
                                 <div class="h-16 w-16 bg-red-50 dark:bg-red-800/20 flex items-center justify-center rounded-full">
                                     <!-- Ganti URL foto profil di sini -->
-                                    <img src="https://assets.kompasiana.com/items/album/2021/03/24/blank-profile-picture-973460-1280-605aadc08ede4874e1153a12.png?t=o&v=740&x=416" alt="Foto Profil" class="w-10 h-10 rounded-full">
+                                    <img src="foto\hen2.jpg" alt="Foto Profil" class="w-10 h-10 rounded-full">
                                 </div>
                                 <div class="ml-4">
                                     <!-- Ganti nama dan divisi di sini -->
                                     <h2 class="mt-1 text-xl font-semibold text-gray-900 dark:text-white">Dizky Henrico</h2>
-                                    <p class="mt-1 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">Anggota Kelompok</p>
+                                    <p class="mt-1 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">Team Member</p>
                                 </div>
                             </div>
 
@@ -128,12 +128,12 @@
                             <div class="flex items-center">
                                 <div class="h-16 w-16 bg-red-50 dark:bg-red-800/20 flex items-center justify-center rounded-full">
                                     <!-- Ganti URL foto profil di sini -->
-                                    <img src="https://assets.kompasiana.com/items/album/2021/03/24/blank-profile-picture-973460-1280-605aadc08ede4874e1153a12.png?t=o&v=740&x=416" alt="Foto Profil" class="w-10 h-10 rounded-full">
+                                    <img src="foto\nopal.jpg" alt="Foto Profil" class="w-10 h-10 rounded-full">
                                 </div>
                                 <div class="ml-4">
                                     <!-- Ganti nama dan divisi di sini -->
                                     <h2 class="mt-1 text-xl font-semibold text-gray-900 dark:text-white">Naufal Rozan</h2>
-                                    <p class="mt-1 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">Anggota Kelompok</p>
+                                    <p class="mt-1 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">Team Member</p>
                                 </div>
                             </div>
 
@@ -143,22 +143,72 @@
                         </a>
                     </div>
                 </div>
-                <div id="about" class="mt-16 flex">
-                    <div class="space-y-12 md:text-center">
-                        <div class="max-w-3xl mb-20 space-y-5 sm:mx-auto sm:space-y-4">
-                            <h2 class="mt-1 text-xl font-semibold text-gray-900 dark:text-white">About</h2>
-                            <p class="mt-1 text-gray-500 dark:text-gray-400 text-left leading-relaxed">The "Gudang Barang" landing page is an attractive and responsive first look of a warehouse management application built using the Laravel framework. This page is designed with an aesthetically pleasing layout and an intuitive user experience.
+            </div>
 
-                                The content on the landing page includes elements such as an attractive title, a brief description of the "Gudang Barang" application, and illustrations relevant to warehouse management. This aims to provide an overview to the user about the purpose and usefulness of the application.
+            <div id="about" class="flex">
+                <div div  class="grid grid-cols-1 md:grid-cols-1 gap-6 lg:gap-8">>
+                    <div class="max-w-3xl mb-20 space-y-5 sm:mx-auto sm:space-y-4">
+                        <h2 class="text-center text-xl font-semibold text-gray-900 dark:text-white ">About</h2>
+                        <p style="text-align:justify" class="mt-1 text-gray-500 dark:text-gray-400 leading-relaxed scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">The "Gudang Barang" landing page is an attractive and responsive first look of a warehouse management application built using the Laravel framework. This page is designed with an aesthetically pleasing layout and an intuitive user experience.
 
-                                In addition, the "Gudang Barang" landing page also displays a list of key features provided by the application, such as item search, stock additions, inventory updates, and reporting. Each feature is accompanied by a clear icon to clarify its functionality.
-                                "Gudang Barang" aims to provide users with an interesting and informative description of the warehouse management application, invite them to explore the features offered, and provide a comfortable and easy-to-use user experience.
+                            The content on the landing page includes elements such as an attractive title, a brief description of the "Gudang Barang" application, and illustrations relevant to warehouse management. This aims to provide an overview to the user about the purpose and usefulness of the application.
 
-                                Overall, Laravel's "Gudang Barang" landing page aims to provide users with an interesting and informative overview of the warehouse management application, invite them to explore the features it offers, and provide a comfortable and easy-to-use user experience.</p>
-                        </div>
+                            In addition, the "Gudang Barang" landing page also displays a list of key features provided by the application, such as item search, stock additions, inventory updates, and reporting. Each feature is accompanied by a clear icon to clarify its functionality.
+                            "Gudang Barang" aims to provide users with an interesting and informative description of the warehouse management application, invite them to explore the features offered, and provide a comfortable and easy-to-use user experience.
+
+                            Overall, Laravel's "Gudang Barang" landing page aims to provide users with an interesting and informative overview of the warehouse management application, invite them to explore the features it offers, and provide a comfortable and easy-to-use user experience.</p>
                     </div>
                 </div>
             </div>
+
+            <div id="faq" style="margin-top: 3rem" class=" max-w-6xl px-12 mx-auto text-center">
+                <div class="space-y-12 md:text-center">
+                    <div class="max-w-3xl mb-20 space-y-5 sm:mx-auto sm:space-y-4">
+                        <h2 class="mt-1 text-xl font-semibold text-gray-900 dark:text-white">Frequently Asked Questions</h2>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align:justify" class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+                        <a class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
+                            <div class="flex items-center">
+                                <div class="ml-4">
+                                    <h2 class="font-semibold text-gray-900 dark:text-white">Can I try it for Free?</h2>
+                                    <p style="margin-top: 1rem" class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">Of course, you can try "Gudang Barang" for free; However, only the admin can access all the features on this website.</p>
+
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
+                            <div class="flex items-center">
+                                <div class="ml-4">
+                                    <h2 class="font-semibold text-gray-900 dark:text-white">Can My Account Be Admin?</h2>
+                                    <p style="margin-top: 1rem" class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">To become an admin, you can request an admin via email andrepratama@mail.com. But you have to give a clear reason to become an admin.</p>
+
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
+                            <div class="flex items-center">
+                                <div class="ml-4">
+                                    <h2 class="font-semibold text-gray-900 dark:text-white">How To Use This Website?</h2>
+                                    <p style="margin-top: 1rem" class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">To use this website, you must register first and later you must verify your email. After that, you can use the website.</p>
+
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
+                            <div class="flex items-center">
+                                <div class="ml-4">
+                                    <h2 class="font-semibold text-gray-900 dark:text-white">Can I try it for Free?</h2>
+                                    <p style="margin-top: 1rem" class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">If you want to see our source code, you can view it via our Github. Please use our source code wisely.</p>
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
 
             <div class="flex justify-center mt-16 px-0 sm:items-center sm:justify-between">
                 <div class="text-center text-sm text-gray-500 dark:text-gray-400 sm:text-left">
@@ -174,6 +224,9 @@
                         </a>
                         <a href="#about" class="group inline-flex items-center hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">
                             About
+                        </a>
+                        <a href="#faq" class="group inline-flex items-center hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">
+                            FAQ
                         </a>
                     </div>
                 </div>
