@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers\API;
 
-use App\Http\Controllers\Controller;
 use App\Models\Item;
 use Illuminate\Http\Request;
+use Illuminate\Validation\Rule;
+use App\Http\Controllers\Controller;
 use Illuminate\Validation\ValidationException;
 
 // use Illuminate\Support\Facades\Route;
@@ -63,7 +64,42 @@ class ItemController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        try {
+            $request->validate([
+                'name' => 'required|max:255',
+                'category_id' => [
+                    'nullable',
+                    Rule::exists('categories', 'id')->where(function ($query) {
+                        $query->where('user_id', auth()->user()->id);
+                    })
+                ]
+            ]);
+
+            $item = Item::create([
+                'name' => ucfirst($request->name),
+                'user_id' => auth()->user()->id,
+                'category_id' => $request->category_id
+            ]);
+
+            $item = Item::with('category')
+                ->where('id', $item->id)
+                ->first();
+
+            return response()->json([
+                'status' => 'success',
+                'message' => 'Item created',
+                'data' => [
+                    'item' => $item,
+                ]
+            ], 201);
+
+        } catch (ValidationException $exception) {
+            return response()->json([
+                'status' => 'error',
+                'message' => 'Validation failed',
+                'errors' => $exception->errors(),
+            ], 422);
+        }
     }
 
     /**
@@ -109,6 +145,87 @@ class ItemController extends Controller
      */
     public function destroy(Item $item)
     {
-        //
+        if (auth()->user()->id !== $item->user_id) {
+
+            return response()->json([
+                'status' => 'error',
+                'message' => 'Forbidden'
+            ], 403);
+        }
+        $item->delete();
+        return response()->json([
+            'status' => 'success',
+            'message' => 'Item deleted'
+        ], 200);
+    }
+
+    public function in(Item $item)
+    {
+        if (auth()->user()->id !== $item->user_id) {
+            # code...
+            return response()->json([
+                'status' => 'error',
+                'message' => 'Forbidden'
+            ], 403);
+        }
+        $item->update([
+            'is_in' => true
+        ]);
+        $item = Item::with('category')
+            ->where('id', $item->id)
+            ->first();
+        return response()->json([
+            'status' => 'success',
+            'message' => 'Item In',
+            'data' => [
+                'item' => $item,
+            ]
+        ], 200);
+    }
+
+    public function out(Item $item)
+    {
+        if (auth()->user()->id !== $item->user_id) {
+
+            return response()->json([
+                'status' => 'error',
+                'message' => 'Forbidden'
+            ], 403);
+        }
+        $item->update([
+            'is_in' => false
+        ]);
+        $item = Item::with('category')
+            ->where('id', $item->id)
+            ->first();
+        return response()->json([
+            'status' => 'success',
+            'message' => 'Item Out',
+            'data' => [
+                'item' => $item,
+            ]
+        ], 200);
+    }
+
+    public function deleteAllCompleted()
+    {
+        $items = Item::where('user_id', auth()->user()->id)
+            ->where('is_in', true)
+            ->get();
+        if ($items->count() == 0) {
+            # code...
+            return response()->json([
+                'status' => 'error',
+                'message' => 'No completed item found',
+            ], 404);
+        }
+
+        foreach ($items as $item) {
+            $item->delete();
+        }
+        return response()->json([
+            'status' => 'success',
+            'message' => '' . $item->count() . ' completed item deleted',
+        ], 200);
     }
 }
