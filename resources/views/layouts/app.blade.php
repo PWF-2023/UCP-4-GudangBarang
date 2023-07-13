@@ -14,7 +14,7 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body x-bind:class="{'dark' : darkMode === true}" class="font-sans antialiased"x-data="{ darkMode: false }" x-init="
+    <body x-bind:class="{'dark' : darkMode === true}" class="font-sans antialiased" x-data="{ darkMode: false }" x-init="
     if (!('darkMode' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches) {
       localStorage.setItem('darkMode', JSON.stringify(true));
     }
