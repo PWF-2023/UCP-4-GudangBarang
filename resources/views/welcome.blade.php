@@ -225,20 +225,20 @@
                 <div div  class="grid grid-cols-1 md:grid-cols-1 gap-6 lg:gap-8">
                     <div class="max-w-3xl space-y-5 sm:mx-auto sm:space-y-4">
                         <h2 class="text-center text-xl font-semibold text-gray-900 dark:text-white ">About</h2>
-                        <p style="text-align:justify" class="mt-1 text-gray-500 dark:text-gray-400 leading-relaxed scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
+                        <p style="text-align:justify" class=" text-gray-500 dark:text-gray-400 leading-relaxed scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
                             "Gudang Barang" is a website that provides a comprehensive platform to fulfill storage and distribution needs. With an intuitive and user-friendly design, this website allows users to explore various types of available goods, ranging from consumer products to industrial equipment. Additionally, "Gudang Barang" also offers fast ordering and delivery services, making it convenient for users to obtain goods efficiently. With a guarantee of quality products and competitive prices, "Gudang Barang" becomes a reliable online destination for all storage and distribution needs.
                         </p>
                     </div>
                 </div>
             </div>
 
-            <div id="faq" class="max-w-6xl px-12 mx-auto text-center mt-12">
-                <div class="space-y-12 md:text-center">
-                    <div >
-                        <h2 class="mt-1 text-xl font-semibold text-gray-900 dark:text-white">Frequently Asked Questions</h2>
+            <div id="faq" class="max-w-6xl px-12 mx-auto text-center mt-20">
+                <div class="md:text-center">
+                    <div>
+                        <h2 class="text-xl font-semibold text-gray-900 dark:text-white">Frequently Asked Questions</h2>
                     </div>
 
-            <div style="text-align:justify" class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+                    <div style="text-align:justify" class="grid grid-cols-1 p-6 md:grid-cols-2 gap-6 lg:gap-8">
                         <a class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
                             <div class="flex items-center">
                                 <div class="ml-4">
