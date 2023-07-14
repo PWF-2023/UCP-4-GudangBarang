@@ -14,13 +14,13 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body x-bind:class="{'dark' : darkMode === true}" class="font-sans text-gray-900 antialiased " x-data="{ darkMode: false }" x-init="
+    <body x-bind:class="{'dark' : darkMode === true}" class="font-sans text-gray-900 antialiased bg-gray-100" x-data="{ darkMode: false }" x-init="
     if (!('darkMode' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches) {
       localStorage.setItem('darkMode', JSON.stringify(true));
     }
     darkMode = JSON.parse(localStorage.getItem('darkMode'));
     $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))" x-cloak>
-    <div class="p-5 flex justify-end dark:bg-gray-900">
+    <div class=" p-5 flex justify-end dark:bg-gray-900">
         <div class="ml-2">
             <button type="button" x-bind:class="darkMode ? 'bg-indigo-500' : 'bg-gray-200'"
                 x-on:click="darkMode = !darkMode"
@@ -53,7 +53,7 @@
             </button>
         </div>
     </div>
-        <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100 dark:bg-gray-900">
+        <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0  dark:bg-gray-900">
             <div>
                 <a href="/">
                     <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
