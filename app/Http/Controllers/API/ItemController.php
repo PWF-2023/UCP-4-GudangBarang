@@ -154,7 +154,7 @@ class ItemController extends Controller
                 ], 403);
             }
             $item->update([
-                'title' => ucfirst($request->title),
+                'name' => ucfirst($request->name),
                 'category_id' => $request->category_id
             ]);
             $item = Item::with('category')
